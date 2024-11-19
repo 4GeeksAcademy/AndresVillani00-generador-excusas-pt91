@@ -24,9 +24,7 @@ window.onload = function() {
   let aleatorioWhat = Math.floor(Math.random() * what.length);
   let aleatorioWhen = Math.floor(Math.random() * when.length);
 
-  for (let i = 0; i < who.length; i++) {
-    excusaGenerada = `<h3>${who[aleatorioWho]} ${action[aleatorioAction]} ${what[aleatorioWhat]} ${when[aleatorioWhen]}</h3>`;
-  }
+  excusaGenerada = `<h3>${who[aleatorioWho]} ${action[aleatorioAction]} ${what[aleatorioWhat]} ${when[aleatorioWhen]}</h3>`;
 
   document.getElementById("excusas").innerHTML = excusaGenerada;
 };
